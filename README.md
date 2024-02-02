@@ -44,6 +44,7 @@ Display Subsections
 
 Get the list of news from the store.
 Multiple news might be categorized in one subsection. Filter the list of unique subsections from the list and display in the navbar.
+
 Filter News
 
 When a user clicks on subsection, it has to dispatch action and sends the subsection name as a parameter to the store.
