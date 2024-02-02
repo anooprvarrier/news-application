@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Store } from "@ngrx/store";
 import { sections } from "../../store/reducers/sections.reducer";
-// import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: "app-sections",
@@ -9,9 +9,9 @@ import { sections } from "../../store/reducers/sections.reducer";
   styleUrls: ["./sections.component.css"],
 })
 export class SectionsComponent implements OnInit {
-  sectionList: any;
+  public sectionList: any[];
 
-  constructor() {}
+  public constructor() {}
 
-  ngOnInit() {}
+  public ngOnInit(): void {}
 }
