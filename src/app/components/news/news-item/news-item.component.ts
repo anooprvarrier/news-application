@@ -1,19 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
-import { News } from '../../../model/news';
+import { News } from "../../../model/news";
 
 @Component({
-  selector: 'app-news-item',
-  templateUrl: './news-item.component.html',
-  styleUrls: ['./news-item.component.css']
+  selector: "app-news-item",
+  templateUrl: "./news-item.component.html",
+  styleUrls: ["./news-item.component.css"],
 })
 export class NewsItemComponent implements OnInit {
-  @Input() newsItem: News;
-  @Input() id: number;
-  url: string;
-  constructor() {
-  }
+  @Input() public newsItem: News;
+  @Input() public id: number;
+  public url: string;
+  public constructor() {}
 
-  ngOnInit() {
-  }
+  public ngOnInit(): void {}
 }

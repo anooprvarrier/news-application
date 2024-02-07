@@ -19,18 +19,18 @@ export const initialState: NewsState = {
 };
 
 // implement actions
-export function news (state = initialState, action: Action) {
+export function news(state = initialState, action: Action) {
     switch (action.type) {
         case LOAD_SECTION_NEWS: {
             return {
-                newsList: [],
+                newsList: action.payload,
                 filter: ''
             };
         }
         case FILTER_SUBSECTION: {
             return {
-                newsList: [],
-                filter: ''
+                ...state,
+                filter: action.payload
             };
         }
         default:
@@ -39,7 +39,9 @@ export function news (state = initialState, action: Action) {
 }
 
 export const getNewsList = (state: any) => {
+    return state;
 };
 
 export const getFilter = (state: any) => {
+    return state.filter;
 };

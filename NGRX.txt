@@ -1,0 +1,42 @@
+What Is Ngrx
+
+NgRx is a framework for building reactive applications in Angular. 
+NgRx is inspired by the Redux pattern - unifying the events in your application and 
+deriving state using RxJS. At a high level, NgRx stores a single state and 
+uses actions to express state changes. NgRx excels in managing complex states,
+making it ideal for applications with a lot of user interactions and multiple data sources.
+
+How Does Ngrx Work
+
+NgRx is made up of 5 main components - Store, Actions, Reducers, Selectors, and Effects.
+
+Store
+
+You can think of this as a client-side database. 
+The Store in NgRx acts as the application's single source of truth. 
+It reflects the current state of the app.
+
+Actions
+
+Actions express unique events that happen in our application. 
+These events range from application lifecycle events, user interactions, to network requests. 
+Actions are how the application communicates with NgRx to tell it what to do.
+
+Reducers
+
+Reducers are responsible for handling transitions between states. 
+Reducers react to the Actions dispatched and executes a pure function to update the Store. 
+Pure functions are functions that are predictable and have no side effects. 
+Given the same set of inputs, a pure function will always return the same set of outputs.
+
+Selectors
+
+Selectors are pure functions for getting slices of the state from the Store. 
+Selectors are how our application can listen to state changes.
+
+Effects
+
+Effects handle the side effects of each Action. 
+These side effects range from communicating with an external API via HTTP 
+when a certain Action is dispatched to dispatching another Action to update another part 
+of the State.
